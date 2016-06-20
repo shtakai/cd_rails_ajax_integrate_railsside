@@ -1,0 +1,25 @@
+{
+  "name": "rails_integrate",
+  "version": "1.0.0",
+  "description": "== README",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shtakai/cd_rails_ajax_integrate_railsside.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shtakai/cd_rails_ajax_integrate_railsside/issues"
+  },
+  "homepage": "https://github.com/shtakai/cd_rails_ajax_integrate_railsside#readme",
+  "dependencies": {
+    "socketio": "^1.0.0"
+  }
+}
