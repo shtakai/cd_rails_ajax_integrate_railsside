@@ -2,6 +2,13 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
+  # TODO: use env
+  socket = io.connect("http://localhost:3001", {force_connection: true})
+
+  socket.on('language', (data) ->
+    console.log(data)
+  )
+
   $('body').on('ajax:success', 'form', (e, data, status, xhr) ->
     console.log(data)
     el = '<ul class="list-unstyled">'
