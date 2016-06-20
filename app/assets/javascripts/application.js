@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
+//= require socket.io-client/socket.io
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
