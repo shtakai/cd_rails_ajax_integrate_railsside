@@ -1,14 +1,26 @@
+<%=flash[:notice]%>
 <p class="text-center">Realtime Voting Result</p>
 <div class="voting center-block">
+  <div id="voting_result"></div>
   <p class="text-center">voting result is here.</p>
 </div>
 <div class="center-block">
   <p class="text-center">What is your favorite language?</p>
-    <ul class="list-unstyled dlist-group">
-      <li class="list-group-item">Ada: <button id="ada" class="language">Ada</button></li>
-      <li class="list-group-item">Javascript: <button id="javascript" class="language">Javascript</button></li>
-      <li class="list-group-item">Eiffel: <button id="eiffel" class="language">Eiffel</button></li>
-      <li class="list-group-item">Python: <button id="python" class="language">Python</button></li>
-      <li class="list-group-item">Ruby: <button id="ruby" class="language">Ruby</button></li>
-    </ul>
+  <ul class="list-unstyled dlist-group">
+    <li class="list-group-item">
+      <%= button_to 'Ada', languages_path, method: :post, remote: true, params: { name: 'ada' } %>
+    </li>
+    <li class="list-group-item">
+      <%= button_to 'Python', languages_path, method: :post, remote: true, params: { name: 'python' } %>
+    </li>
+    <li class="list-group-item">
+      <%= button_to 'Javascript', languages_path, method: :post, remote: true, params: { name: 'javascript' } %>
+    </li>
+    <li class="list-group-item">
+      <%= button_to 'Eiffel', languages_path, method: :post, remote: true, params: { name: 'eiffel' } %>
+    </li>
+    <li class="list-group-item">
+      <%= button_to 'Ruby', languages_path, method: :post, remote: true, params: { name: 'ruby' } %>
+    </li>
+  </ul>
 </div>
